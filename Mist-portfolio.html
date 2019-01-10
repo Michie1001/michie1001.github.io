@@ -11,11 +11,11 @@
 			<div class="first-bg">
 				<div class="bg"></div>
 				<div class="aside">
-					<div class="menu"><a href="#"><i class="material-icons">reorder</i></a></div>
+					<div class="menu" onclick="toggleMenu()"><i class="material-icons">reorder</i></div>
 					<div class="vertical-border"></div>
 					<div class="social-media">
 						<ul>
-							<li><a href=""><i class="material-icons">assignment_ind</i></a></li>
+							<li><a href="https://www.linkedin.com/in/michelle-ugwu-51996711b/"><i class="material-icons">assignment_ind</i></a></li>
 							<li><a href="https://github.com/Michie1001"><i class="material-icons">group_work</i></a></li>
 							<li><a href="https://www.instagram.com/michie_ugzz/"><i class="material-icons">photo_camera</i></a></li>
 							<li><a href="https://drive.google.com/drive/folders/1CoN2muqlx3SJHsq5PT38uQQNXIZr9Qel?usp=sharing"><i class="material-icons">directions_boat</i></a></li>
@@ -32,8 +32,18 @@
 			<div class="text">
 				<h1>I'm Mist <span>...hi earthlings</span></h1>
 				<h3>I love travelling, creating realities and order</h3>
-				<div class="click-video"><i class="material-icons">sentiment_satisfied</i></div>
+				<div class="click-me"><i class="material-icons">sentiment_satisfied</i></div>
 			</div>
 		</div>
 	</body>
+	<script>
+		function toggleMenu() {
+		  document.getElementById("social-media").style.display = "none";
+		}
+	</script>
 </html>
+
+
+<!-- Use position:sticky for the main website to keep stuff stuck to the top on scroll
+Use .clearfix: overflow:auto; when using floats
+ -->

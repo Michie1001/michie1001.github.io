@@ -23,6 +23,9 @@ ul{
 li{
 	list-style-type: none;
 }
+li :hover{
+	transform: scale(1.2);
+}
 a{
 	color: #d1b18e;
 	text-decoration: none;
@@ -93,7 +96,7 @@ a{
 	z-index: 1000;
 	text-shadow: 1px 1px #333;
 }
-.text .click-video{
+.text .click-me{
 	background-color: #3c3c3c3b;
 	border-radius: 50%;
 	padding: 2%;
@@ -101,6 +104,6 @@ a{
 	height: 35px;
 	width: 35px;
 }
-.text .click-video i{
+.text .click-me i{
 	font-size: 35px;
 }
