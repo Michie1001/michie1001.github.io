@@ -89,9 +89,6 @@ body img{
 	opacity: 0.9;
 	transform: scale(1.1);
 }
-#opened{
-	display: none;
-}
 .aside{
 	width: 67px;
     padding: 0px;
