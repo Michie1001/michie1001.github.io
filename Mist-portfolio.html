@@ -2,48 +2,119 @@
 <html>
 	<head>
 		<title>Mist's Portfolio</title>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" type="text/css" href="Mist-portfolio.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	</head>
 	<body>
+		<img src="pp6.jpg">
 		<div class="wrapper">
-			<div class="first-bg">
-				<div class="bg"></div>
-				<div class="aside">
-					<div class="menu" onclick="toggleMenu()"><i class="material-icons">reorder</i></div>
-					<div class="vertical-border"></div>
-					<div class="social-media">
-						<ul>
-							<li><a href="https://www.linkedin.com/in/michelle-ugwu-51996711b/"><i class="material-icons">assignment_ind</i></a></li>
-							<li><a href="https://github.com/Michie1001"><i class="material-icons">group_work</i></a></li>
-							<li><a href="https://www.instagram.com/michie_ugzz/"><i class="material-icons">photo_camera</i></a></li>
-							<li><a href="https://drive.google.com/drive/folders/1CoN2muqlx3SJHsq5PT38uQQNXIZr9Qel?usp=sharing"><i class="material-icons">directions_boat</i></a></li>
-							<li><a href="https://twitter.com/Michie1001"><i class="material-icons">pets</i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="second-bg">
-				<div class="slideshow">
-					<img src="homepage2.jpg"/>
-				</div>
-			</div>
 			<div class="text">
-				<h1>I'm Mist <span>...hi earthlings</span></h1>
-				<h3>I love travelling, creating realities and order</h3>
-				<div class="click-me"><i class="material-icons">sentiment_satisfied</i></div>
+				<h1>I'm Mist</h1>
+				<h3>Hover over the face below</h3>
+				<div class="click-me">
+					<i class="material-icons">sentiment_satisfied</i>
+					<i class="material-icons" id="smile">insert_emoticon</i>
+					<span class="tooltip" id="one">I like anime, comics and I am a total bibliophile<br/> <i class="material-icons">chrome_reader_mode</i></span>
+					<span class="tooltip" id="two">Invite me over, I love travelling and exploring!</span>
+					<span class="tooltip" id="three">I would happily travel for a living<br><i class="material-icons">public</i></span>
+					<span class="tooltip" id="four">I love animations, special effects and CGI</span>
+					<span class="tooltip" id="five">I love Disney</span>
+					<span class="tooltip" id="six">I like to go by gamification expert, I make mundane things enjoyable!</span>
+					<span class="tooltip" id="seven">I game ..and make games too<br><i class="material-icons">gamepad</i></span>
+					<span class="tooltip" id="eight">I take aesthetic pictures<br><i class="material-icons">camera_alt</i></span>
+					<span class="tooltip" id="nine" data-heading="I draw">I draw</span>
+					<span class="tooltip" id="ten">Shoot me a mail, let's connect<br><i class="material-icons">local_post_office</i></span>
+					<span class="tooltip" id="eleven">Smile!!!!!</span>
+					<span class="tooltip" id="twelve">I code { }</span>
+				</div>
+			</div>
+			<div class="first-bg">
+					<button class="menu">
+						<i class="material-icons" id="closed">reorder</i>
+						<i class="material-icons" id="opened">filter_list</i>
+					</button>
+					<div class="aside">
+						<div class="vertical-line"></div>
+						<div class="social-media">
+
+							<ul>
+								<li><a href="https://www.linkedin.com/in/michelle-ugwu-51996711b/" target="_blank"><i class="material-icons">assignment_ind</i></a></li>
+								<li><a href="https://github.com/Michie1001" target="_blank"><i class="material-icons">group_work</i></a></li>
+								<li><a href="https://www.instagram.com/michie_ugzz/" target="_blank"><i class="material-icons">photo_camera</i></a></li>
+								<li><a href="https://drive.google.com/drive/folders/1CoN2muqlx3SJHsq5PT38uQQNXIZr9Qel?usp=sharing" target="_blank"><i class="material-icons">directions_boat</i></a></li>
+								<li><a href="https://twitter.com/Michie1001" target="_blank"><i class="material-icons">pets</i></a></li>
+							</ul>
+						</div>
+					</div>
 			</div>
 		</div>
 	</body>
 	<script>
-		function toggleMenu() {
-		  document.getElementById("social-media").style.display = "none";
-		}
+		$('.menu').on("click", function(){
+			$('.aside').toggleClass('opened-aside');
+			$('#closed').toggle(hide);
+			$('#opened').toggle(show);
+		})
 	</script>
 </html>
 
 
 <!-- Use position:sticky for the main website to keep stuff stuck to the top on scroll
 Use .clearfix: overflow:auto; when using floats
+input:checked
+input:disabled
+input:enabled
+:focus
+:hover
+:in-range
+:required
+:valid
+:invalid
+
+
+:target for the side menus that operate the main page like active ttheory
+
+position:fixed for a vertical nav bar
+dropdown menu for sammy woods
+
+Signup forms on counsel app, control orb and ask me forms on my page.
+
+fonts:
+
+horizon
+neo sans
+proxima nova
+foco
+tondo
+museo sans
+uni sans
+neue swift
+brandon grotesque
+revista
+bambusa pro
+aventura
+axis
+azedo
+canilari
+posterama
+grenale slab
+docu
+steak
+ff blur
+itc bauhaus
+frutiger
+univers
+didot
+rockwell
+berlin
+akura popo
+bobber
+sabo
+bodoni
+futura
+
  -->
