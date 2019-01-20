@@ -243,11 +243,11 @@ body img{
 .text .click-me #five{
 	transition: 1s ease 6s;
     font-size: 3vw;
-    width: 400px;
+    width: 500px;
     color: #e4cbab;
-    top: -202px;
+    top: -212px;
     /*font-family: akura popo;*/
-    font-weight: 600;
+    font-weight: 400;
     left: -342px;
 }
 .text .click-me #six{
@@ -361,6 +361,9 @@ body img{
 	}
 	h2{
 		font-size: 4vw;
+	}
+	.wrapper{
+		opacity: 1;
 	}
 	.text{
 		margin: 35vh auto;
