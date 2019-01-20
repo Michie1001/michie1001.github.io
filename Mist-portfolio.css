@@ -15,15 +15,12 @@ body{
 	width: 100%;
 	outline: none;
 	height: 100%;
-  	font-size: 2vmin;
 }
 h3 {
-  	font-size: 3.0vh;
+  	font-size: 1.5vw;
 }
 h1{
   	font-size: 5.9vw;
-	font-family: Welcome;
-	/*font-size: 100px;*/
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	line-height: 0.5;
@@ -33,8 +30,11 @@ h1 a:hover{
 	transform: scale(1.6);
 	transition: 3s ease all;
 }
+h2{
+	display: none;
+	font-size: 2.5vw
+}
 h3{
-	/*font-size: 20px;*/
 	margin-bottom: 15px;
 }
 ul{
@@ -42,13 +42,15 @@ ul{
 }
 li{
 	list-style-type: none;
+	cursor: pointer;
 }
 li i{
-	font-size: 30px !important;
+	font-size: 5vh !important;
 	opacity: 0.3;
 	transition: ease 2s all;
 }
 li :hover{
+	cursor: pointer;
 	transform: scale(1.2);
 }
 li:hover i{
@@ -88,8 +90,8 @@ body img{
 }
 .menu{
 	background-color: #000;
-	width: 50px;
-	height: 50px;
+	width: 5vw;
+	height: 5vw;
 	margin: 0;
 	padding: 1.5%;
 	left: 0;
@@ -101,7 +103,7 @@ body img{
 }
 .menu i{
 	color: #fff;
-	font-size: 30px !important;
+	font-size: 3vw !important;
 }
 .menu:hover{
 	cursor: pointer;
@@ -109,7 +111,7 @@ body img{
 	transform: scale(1.1);
 }
 .aside{
-	width: 67px;
+	width: 6vw;
     padding: 0px;
     left: 0;
     top: 0;
@@ -127,10 +129,13 @@ body img{
 }
 .aside .vertical-line{
 	border-right: 1px solid #fff;
-	height: 375px;
+	height: 60vh;
 	width: 50%;
-	margin: 10px 0;
+	margin: 5% 0;
 	opacity: 0.3;
+}
+.mobile-social-media{
+	display: none;
 }
 .text{
 	margin: 16% auto;
@@ -197,7 +202,7 @@ body img{
 }
 .text .click-me #one{
 	transition: 1s ease 10s;
-    font-size: 30px;
+    font-size: 2vw;
     width: 250px;
     color: #d1f7bdf7;
     top: -349px;
@@ -207,7 +212,7 @@ body img{
 }
 .text .click-me #two{
     transition: 1s ease 9s;
-    font-size: 22px;
+    font-size: 2vw;
     width: 400px;
     color: #04fb72;
     top: -122px;
@@ -217,7 +222,7 @@ body img{
 }
 .text .click-me #three{
 	transition: 1s ease 8s;
-    font-size: 20px;
+    font-size: 2.5vw;
     width: 300px;
     line-height: 1;
     color: #f995f6fc;
@@ -228,7 +233,7 @@ body img{
 }
 .text .click-me #four{
     transition: 1s ease 7s;
-    font-size: 30px;
+    font-size: 2vw;
     width: 400px;
     color: #f75c01;
     top: 55px;
@@ -237,7 +242,7 @@ body img{
 }
 .text .click-me #five{
 	transition: 1s ease 6s;
-    font-size: 29px;
+    font-size: 3vw;
     width: 400px;
     color: #e4cbab;
     top: -202px;
@@ -247,17 +252,17 @@ body img{
 }
 .text .click-me #six{
     transition: 1s ease 5s;
-    font-size: 30px;
+    font-size: 2vw;
     width: 400px;
     color: #e2f53f;
-    top: 152px;
+    top: 192px;
     /*font-family: berlin;*/
     font-weight: 600;
     left: -413px;
 }
 .text .click-me #seven{
 	transition: 1s ease 4s;
-    font-size: 35px;
+    font-size: 2vw;
     width: 500px;
     line-height: 1;
     text-align: center;
@@ -269,7 +274,7 @@ body img{
 }
 .text .click-me #eight{
     transition: 1s ease 3s;
-    font-size: 24px;
+    font-size: 2vw;
     width: 400px;
     color: lightskyblue;
     top: -352px;
@@ -288,7 +293,7 @@ body img{
 }
 .text .click-me #nine{
     transition: 1s ease 2s;
-    font-size: 35px;
+    font-size: 3.8vw;
     width: 100px;
     color: red;
     top: -2px;
@@ -299,7 +304,7 @@ body img{
 }
 .text .click-me #ten{
     transition: 1s ease 1s;
-    font-size: 28px;
+    font-size: 3vw;
     width: 200px;
     color: #fa9c87;
     top: -252px;
@@ -309,7 +314,7 @@ body img{
 }
 .text .click-me #eleven{
     transition: 1s ease 11s;
-    font-size: 50px;
+    font-size: 3.5vw;
     width: auto;
     color: #80217d;
     text-shadow: 2px 2px white;
@@ -320,11 +325,60 @@ body img{
 }
 .text .click-me #twelve{
 	transition: 1s ease 12s;
-    font-size: 45px;
+    font-size: 3.5vw;
     font-weight: 600;
     width: auto;
     color: #ffeb00;
     top: -282px;
     /*font-family: 'ff blur';*/
     left: -465px;
+}
+@media only screen and (max-width: 992px){
+	h2{
+		display: block;
+	}
+	h3{
+		display: none;
+	}
+	.click-me{
+		display: none;
+	}
+}
+@media only screen and (max-width: 768px){
+	.aside{
+		width: 5vw;
+	}
+	.menu{
+		width: 7vh;
+	}
+}
+@media only screen and (max-width: 600px){
+	h1{
+		font-size: 10vw;
+	}
+	h1 a{
+		color: yellow;
+	}
+	h2{
+		font-size: 4vw;
+	}
+	.text{
+		margin: 35vh auto;
+	}
+	.first-bg{
+		display: none;
+	}
+	.mobile-social-media{
+		display: block;
+		bottom: 0;
+	    position: absolute;
+	    left: 0;
+	    width: 100%;
+	    text-align: center;
+	}
+	.mobile-social-media li{
+	    width: 20%;
+		float: left;
+		margin-bottom: 10%;
+	}
 }
