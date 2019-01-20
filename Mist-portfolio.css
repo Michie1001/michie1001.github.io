@@ -1,18 +1,27 @@
-@font-face{
-	font-family: 'STEAK';
-	src: url('STEAK.ttf') format('truetype');
+@font-face { 
+	font-family: STEAK; 
+	src: url('STEAK.TTF');
+	font-family: Welcome;
+	src: url('Welcome.TTF');
 }
 body{
 	color: #fff;
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	outline: none;
 }
 h1{
+	font-family: Welcome;
 	font-size: 100px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	line-height: 0.5;
+}
+h1 a:hover{
+	color: yellow;
+	transform: scale(1.6);
+	transition: 3s ease all;
 }
 h3{
 	font-size: 20px;
@@ -39,6 +48,7 @@ li:hover i{
 a{
 	color: #fff;
 	text-decoration: none;
+	transition: ease 3s all;
 }
 body img{
 	position: absolute;
