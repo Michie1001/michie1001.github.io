@@ -257,6 +257,71 @@ a{
 	padding: 2% 0;
 }
 
+
+
+/*********BELOW BEGINS THE ABOUT ME PAGE *********/
+
+
+
+
+
+
+/*********BELOW BEGINS THE AESTHETICS PAGE *********/
+
+
+
+
+
+/*********BELOW BEGINS THE TRAVEL PAGE *********/
+
+
+
+
+
+/*********BELOW BEGINS THE CONSULTANCY PAGE *********/
+
+
+
+
+/*********BELOW BEGINS THE ANIMATION PAGE *********/
+
+
+
+
+
+/*********BELOW BEGINS THE RANT PAGE *********/
+
+.wrap .mask .rants{
+    top: 38vh;
+    position: absolute;
+    font-size: 2vw;
+    left: 15vw;
+}
+.wrap .mask .rants h2{
+	margin: 0;
+}
+.wrap .mask .rants h3{
+	font-size: 1.5vw;
+}
+.posts{
+	background-color: #000;
+}
+.posts ul{
+	margin:0;
+	padding: 2% 15%;
+}
+.posts li{
+	list-style-type: none;
+	margin-bottom: 8%;
+}
+.posts li h2{
+	line-height: 2;
+	border-bottom: 1px solid;
+}
+
+
+
+
 body::-webkit-scrollbar {
     width: 0.2em;
   	opacity: 0;  
