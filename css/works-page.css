@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #ffc;
+	font-family: sans;
+}
+h1, h2{
+	color: #ff1;
+}
+i{
+	font-size: 3.5vw !important;
+}
+a{
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+}
+.mobile{
+	display: block;
+	font-size: 4.5vw;
+}
+.mobile i{
+	font-size: 8vw !important;
+	margin: 0 2vw;
+}
+.mobile > img{
+	object-fit: cover;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.navbar{
+	overflow:hidden;
+	background-color: #000;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.navbar a{
+	width: 32%;
+	line-height: 4;
+	text-align: center;
+	display: inline-block;
+}
+.content{
+	background-color: #000;
+	padding: 5%;
+	opacity: 0.92;
+}
+.intro{
+	padding: 36vh 0vw;
+}
+.works{
+	text-align: center;
+	border-top: 1px solid;
+}
+.item{
+	margin:20% 0;
+}
+.footer{
+	text-align: center;
+}
+.footer ul{
+	padding: 0;
+	width: 100%;
+}
+.footer li{
+	list-style-type: none;
+	display: inline-block;
+}
+.wrap{
+    overflow: hidden;
+}
+.wrap > img{
+	object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 12%;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+.wrap .nav{
+	width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 1% 1.5%;
+    background-color: #000;
+    z-index: 1;
+    box-shadow: -1px 1px 12px 0px #101010;
+}
+.wrap .nav .logo{
+	color: #ff1;
+    font-weight: bold;
+    font-size: 3vw;
+    padding: 0% 2.5%;
+}
+.nav span :hover{
+	color: #ff1;
+	transition: 2s ease;
+}
+.wrap .mask{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.9;
+}
+.wrap .mask .text{
+    top: 48vh;
+    position: absolute;
+    font-size: 2vw;
+    left: 55vw;
+}
+.wrap .mask .text h1{
+	margin: 0;
+}
+.wrap .mask .text p{
+	font-size: 1.7vw;
+}
+.talents{
+	background-color: #000;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	border-top: 2px solid #000;
+}
+.talents img{
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 70%;
+	opacity: 0.1;
+}
+.talents ul{
+	margin: 0;
+    padding: 1% 10% 0% 10%;
+    text-align: center;
+}
+.talents li{
+	list-style-type: none;
+	width: 20%;
+	margin: 3% auto;
+	display: inline-block;
+	text-align: center;
+}
+.projects{
+	background-color: #000;
+	padding: 3% 10% 1% 10%;
+	position: relative;
+}
+.projects h2{
+	margin: 0;
+	padding: 2% 0;
+	text-align: center;
+}
+.projects .block{
+	z-index: 1000;
+	width: 100%;
+	margin: 0% 0% 5% 0%;
+}
+.projects h3{
+	width: 20%;
+    float: left;
+    line-height: 3;
+    text-align: center;
+    margin-right: 5%;
+    border: 3px solid #ff3;
+    border-radius: 50px;
+    transition: 500ms ease all;
+}
+.projects h3:hover{
+	background-color: #ff1;
+	color: #000;
+	cursor: pointer;
+	transition: 500ms ease all;
+}
+.nutshell{
+	width: 100%;
+	background-color: #000;
+	opacity: 0.97;
+	z-index: 1;
+	height: 180vh;
+}
+.nutshell ul{
+	margin: 0;
+	padding: 5% 20%;
+	padding-bottom: 1%;
+    height: 100%;
+}
+.nutshell li{
+	list-style-type: none;
+	display: inline-block;
+	width: 48%;
+    margin: 0.5%;
+	float: left;
+	height: 50vh;
+    border: 3px solid #ff9;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.nutshell li img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    transition: 2s ease all;
+}
+.nutshell li img:hover{
+	opacity: 1.6;
+	transition: 2s ease all;
+}
+.nutshell li span{
+	position: absolute;
+	font-size: 2vw;
+	font-weight: 600;
+	top:45%;
+    width: 100%;
+    text-align: center;
+    height: 1px;
+    color: #ff9;
+}
+.reachable{
+	background-color: #000;
+	opacity: 0.97;
+	text-align: center;
+	height: 270px;
+	padding: 2% 10%;
+	padding-top: 0%
+}
+.reachable h2{
+	margin: 0;
+}
+.reachable ul{
+	margin: 0;
+	padding: 3% 0%;
+	text-align: center;
+}
+.reachable li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 2% 5%;
+}
+.desktop-footer{
+	background-color: #000;
+	text-align: center;
+    color: #ff1;
+    font-weight: bold;
+    font-size: 1vw;
+}
+.desktop-footer p{
+	margin: 0;
+	padding: 2% 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.2em;
+  	opacity: 0;  
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    background-color: #111;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #000;
+  outline: 1px solid #000;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+	.mobile{
+		display: block;
+	}
+	.desktop{
+		display: none;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.mobile{
+		display: none;
+	}
+	.desktop{
+		display: block;
+	}
+}
