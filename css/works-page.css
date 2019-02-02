@@ -185,37 +185,33 @@ a{
 	background-color: #000;
 	opacity: 0.97;
 	z-index: 1;
-	height: 180vh;
+	height: 115vh;
 }
 .nutshell ul{
 	margin: 0;
-	padding: 5% 20%;
-	padding-bottom: 1%;
+	padding: 0;
     height: 100%;
 }
 .nutshell li{
 	list-style-type: none;
 	display: inline-block;
-	width: 48%;
-    margin: 0.5%;
+	width: 33.3%;
+    margin: 0;
 	float: left;
 	height: 50vh;
-    border: 3px solid #ff9;
-    border-radius: 10px;
     overflow: hidden;
     position: relative;
 }
 .nutshell li img{
     object-fit: cover;
     width: 100%;
-    height: 100%;
-    opacity: 0.2;
+    opacity: 0.6;
     position: absolute;
-    transition: 2s ease all;
+    transition: 500ms ease all;
 }
 .nutshell li img:hover{
-	opacity: 1.6;
-	transition: 2s ease all;
+	opacity: 0.4;
+	transition: 500ms ease all;
 }
 .nutshell li span{
 	position: absolute;
