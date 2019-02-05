@@ -202,10 +202,10 @@ body img{
 }
 .text .click-me #instructions{
 	font-size: 1.16em;
-    width: 500px;
+    width: 400px;
     color: #ffc;
-    top: -340px;
-    left: 170px;
+    top: -240px;
+    left: 100px;
     transition: 1s ease 1s;
 }
 #instructions b{
@@ -216,31 +216,31 @@ body img{
     font-size: 1.5vw;
     width: 300px;
     color: #d1f7bdf7;
-    top: -349px;
+    top: -150px;
 /*    font-family: "futura";*/
     font-weight: 600;
-    left: -400px;
+    left: 300px;
 }
 .text .click-me #two{
     transition: 1s ease 9s;
-    font-size: 2vw;
+    font-size: 1.3vw;
     width: 400px;
     color: #04fb72;
     top: -142px;
 /*    font-family: "bodoni";*/
     font-weight: 600;
-    left: -613px;
+    left: -513px;
 }
 .text .click-me #three{
 	transition: 1s ease 8s;
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     width: 300px;
     line-height: 1;
     color: #f995f6fc;
     top: 60px;
 /*    font-family: "sabo";*/
     font-weight: 600;
-    left: -580px;
+    left: -480px;
 }
 .text .click-me #four{
     transition: 1s ease 7s;
@@ -249,7 +249,7 @@ body img{
     color: #f75c01;
     top: 55px;
     /*font-family: bobber;*/
-    left: -250px;
+    left: -100px;
 }
 .text .click-me #five{
 	transition: 1s ease 6s;
@@ -263,13 +263,13 @@ body img{
 }
 .text .click-me #six{
     transition: 1s ease 5s;
-    font-size: 2vw;
-    width: 400px;
+    font-size: 1.2vw;
+    width: 250px;
     color: #e2f53f;
-    top: 192px;
+    top: 30px;
     /*font-family: berlin;*/
     font-weight: 600;
-    left: -600px;
+    left: 350px;
 }
 .text .click-me #seven{
 	transition: 1s ease 4s;
@@ -288,7 +288,7 @@ body img{
     font-size: 2vw;
     width: 400px;
     color: lightskyblue;
-    top: -352px;
+    top: -300px;
     /*font-family: didot;*/
     font-weight: 600;
     left: -150px;
@@ -311,17 +311,17 @@ body img{
     /*font-family: univers;*/
     font-weight: 600;
     white-space: nowrap;
-    left: -353px;
+    left: -253px;
 }
 .text .click-me #ten{
     transition: 1s ease 1s;
     font-size: 2.1vw;
     width: 400px;
     color: #fa9c87;
-    top: 200px;
+    top: 100px;
     /*font-family: frutiger;*/
     font-weight: 400;
-    left: -200px;
+    left: 200px;
 }
 .text .click-me #eleven{
     transition: 1s ease 11s;
@@ -332,7 +332,7 @@ body img{
     top: -40px;
     /*font-family: itc bauhaus;*/
     font-weight: 600;
-    left: -580px;
+    left: 180px;
 }
 .text .click-me #twelve{
 	transition: 1s ease 12s;
@@ -342,7 +342,7 @@ body img{
     color: #ffeb00;
     top: -265px;
     /*font-family: 'ff blur';*/
-    left: -485px;
+    left: -385px;
 }
 
 
