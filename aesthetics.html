@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aesthetics</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- <link rel="stylesheet" type="text/css" href="css/works-page.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		*{
+			border:1px solid black;
+		}
+		.layout{
+			margin:0;
+			flex-direction: column;
+			display: flex;
+			height: 100vh;
+		}
+		.nav{
+			height: 15vh
+		}
+		.jumbo{
+			background-color: blue;
+			width: 50%;
+			height: 50%;
+			overflow: hidden;
+			align-self: center;
+			border-radius: 5px;
+		}
+		img{
+			object-fit: cover;
+			width: 100%;
+			height: 100%
+		}
+		@media only screen and (max-width: 768px) {
+			.jumbo{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- Demonstrating flex and grid -->
+	<div class="layout">
+		<div class="nav"></div>
+		<div class="jumbo">
+			<img src="img/jumbo.jpg">
+		</div>
+		<div class="cards"></div>
+	</div>
+	<div class="img-grid">
+		
+	</div>
+</body>
+</html>
