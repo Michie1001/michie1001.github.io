@@ -12,9 +12,39 @@
 		body{
 			margin: 0;
 			padding: 0;
+			font-family: "Comic Sans MS", cursive, sans-serif;
 		}
 		*{
-			border:1px solid black;
+			/*border:1px solid black;*/
+		}
+		img{
+			object-fit: cover;
+			width: 100%;
+			height: 100%
+		}
+		ul{
+			margin: 0;
+			padding: 0 10%;
+			display: flex;
+			align-content: center;
+		}
+		li{
+			list-style-type: none;
+			margin: 2% auto;
+			padding: 5.5%;
+			border-radius: 10px;
+			border: 2px solid blue;
+			color: blue;
+			font-size: 1.2vw;
+			font-weight: 600;
+			transition: ease 700ms all;
+		}
+		li:hover{
+			box-shadow: inset 0px 0px 20px 10px blue;
+			transition: ease 700ms all;
+		}
+		i{
+			font-size: 3vw!important;	
 		}
 		.layout{
 			margin:0;
@@ -23,20 +53,52 @@
 			height: 100vh;
 		}
 		.nav{
-			height: 15vh
+			height: 12vh;
+			display: flex;
+		}
+		.like-counter{
+		    width: 40px;
+		    padding: 20px 30px;
+		    overflow: hidden;
+		    display: flex;
+		    line-height: 2.5;
+		}
+		.like-counter .liked{
+			background-image: url("img/heart-full.png");
+		    background-repeat: no-repeat;
+			object-fit: cover;
+			margin-right: 10px;
+			background-color: red; /*Temporal till I figure out how to change the images on click*/
+			height: 100%;
+			width: 100%;
+			cursor: pointer;
+			user-select: none;
+			transition: ease 300ms;
+		}
+		.like-counter .heart{
+			object-fit: cover;
+			margin-right: 10px;
+			height: 100%;
+			width: 100%;
+			cursor: pointer;
+			user-select: none;
+			visibility: visible;
+		}
+		.comment{
+			color: blue;
+			padding: 1% 2%;
+			margin-left: auto;
+			font-weight: 600;
+			cursor: pointer;
+			user-select: none;
 		}
 		.jumbo{
-			background-color: blue;
+			background-color: white;
 			width: 50%;
-			height: 50%;
+			height: 60%;
 			overflow: hidden;
 			align-self: center;
-			border-radius: 5px;
-		}
-		img{
-			object-fit: cover;
-			width: 100%;
-			height: 100%
+			border-radius: 40%;
 		}
 		@media only screen and (max-width: 768px) {
 			.jumbo{
@@ -48,14 +110,33 @@
 <body>
 	<!-- Demonstrating flex and grid -->
 	<div class="layout">
-		<div class="nav"></div>
+		<div class="nav">
+			<div class="like-counter">
+				<img onclick="liked(this)" class="heart" src="img/heart-outline.svg">
+				<span>45</span>
+			</div>
+			<div class="comment"><i class="material-icons">message</i></div>
+		</div>
 		<div class="jumbo">
 			<img src="img/jumbo.jpg">
 		</div>
-		<div class="cards"></div>
+		<div class="cards">
+			<ul>
+				<li>EVENTS</li>
+				<li>PLACES</li>
+				<li>PEOPLE</li>
+				<li>RANDOMS</li>
+			</ul>
+		</div>
 	</div>
 	<div class="img-grid">
 		
 	</div>
+	
+	<script type="text/javascript">
+		function liked(x){
+			x.classList.toggle("liked");
+		}
+	</script>
 </body>
 </html>
