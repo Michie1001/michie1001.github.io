@@ -32,12 +32,13 @@
 			list-style-type: none;
 			margin: 2% auto;
 			padding: 5.5%;
-			border-radius: 10px;
+			border-radius: 30%;
 			border: 2px solid blue;
 			color: blue;
 			font-size: 1.2vw;
 			font-weight: 600;
 			transition: ease 700ms all;
+			cursor: pointer;
 		}
 		li:hover{
 			box-shadow: inset 0px 0px 20px 10px blue;
@@ -94,11 +95,43 @@
 		}
 		.jumbo{
 			background-color: white;
-			width: 50%;
+			width: 80%;
 			height: 60%;
 			overflow: hidden;
 			align-self: center;
-			border-radius: 40%;
+			border-radius: 10px;
+		}
+		.img-grid{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(6, 300px);
+			grid-template-areas:
+			"a a a b"
+			"a a a b"
+			"a a a c"
+			"d f f g"
+			"e f f h"
+			"i i j h";
+			grid-gap: 20px;
+			align-items: start;
+		}
+		.img-holder{
+			border-radius: 5px;
+			background-color: #ccc;
+			overflow: hidden;
+			border:1px solid black;
+		}
+		.six-tabs{
+			grid-area: a;
+		}
+		.four-tabs{
+			grid-area: d;
+		}
+		.two-tabs{
+			grid-area: b;
+		}
+		.one-tabs{
+			grid-area: c;
 		}
 		@media only screen and (max-width: 768px) {
 			.jumbo{
@@ -130,7 +163,10 @@
 		</div>
 	</div>
 	<div class="img-grid">
-		
+		<div class="img-holder six-tabs"></div>
+		<div class="img-holder four-tabs"></div>
+		<div class="img-holder two-tabs"></div>
+		<div class="img-holder one-tabs"></div>
 	</div>
 	
 	<script type="text/javascript">

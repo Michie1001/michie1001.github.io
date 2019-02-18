@@ -353,12 +353,6 @@ a{
 	text-align: center;
 	margin: 38vh auto;
 }
-.item p a{
-	color: #ff1;
-	border-bottom: 1px solid;
-	font-weight: bold;
-	font-size: 3.2vw;
-}
 .travel-footer{
 	width: 100%;
 	background-color: #000;
@@ -371,12 +365,40 @@ a{
 .mask .travel-intro{
 	top: 38vh;
     position: absolute;
-    font-size: 2vw;
+    font-size: 1.5vw;
     left: 0vw;
     text-align: center;
+    padding: 0 10%;
+}
+.works .block{
+	display: inline-block;
+    background-color: #030202;
+    border-radius: 10px;
+    overflow: hidden;
+	opacity: 1;
+	margin: 20% 0 0 0;
+}
+.works .block .img-holder{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.works .block .img-holder img{
+	width: 100%;
+	height: 120%;
+	object-fit: cover;
+}
+.works .block p span{
+	color: #6efff8;
+	font-weight: 600;
+}
+.works .block  p a{
+	font-size: 10px;
+	color: #6efff8;
+	font-weight: bold;
 }
 .places{
-	background-color: #000;
+	background-color: #1f1d1d;
 	padding: 3% 10% 1% 10%;
 	position: relative;
 }
@@ -386,33 +408,46 @@ a{
 	text-align: center;
 }
 .places .block{
-	z-index: 1000;
-	width: 100%;
-	margin: 0% 0% 5% 0%;
-}
-.places h3{
-	width: 20%;
-    float: left;
-    line-height: 3;
-    text-align: center;
-    margin-right: 5%;
-    border: 3px solid #ff3;
-    border-radius: 50px;
-    transition: 500ms ease all;
-}
-.places h3:hover{
-	background-color: #ff1;
-	color: #000;
-	cursor: pointer;
+	/*z-index: 1000;*/
+	width: 30%;
+    display: inline-block;
+    margin: 0% 1% 5% 2%;
+    background-color: #030202;
+    border-radius: 10px;
+    overflow: hidden;
+	opacity: 0.7;
 	transition: 500ms ease all;
 }
+.places .block:hover{
+	opacity: 0.9;
+	transition: 500ms ease all;
+	box-shadow: 0px 1px 2px 2px #030202;
+}
+.places .block .img-holder{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.places .block .img-holder img{
+	width: 100%;
+	height: 120%;
+	object-fit: cover;
+	z-index: -1
+}
+.places .block p{
+	padding: 0 5%;
+}
+.places .block p span{
+	color: #6efff8;
+	font-weight: 600;
+}
 .places .block  p a{
-	line-height: 3;
+	font-size: 1vw;
 	font-weight: bold;
 	transition: 1s ease all;
 }
 .places .block  p a:hover{
-	color: #ff1;
+	color: #6efff8;
 	transition: 1s ease all;
 }
 
