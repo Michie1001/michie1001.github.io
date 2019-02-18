@@ -486,12 +486,20 @@ a{
 .posts li{
 	list-style-type: none;
 	margin-bottom: 8%;
+	margin-right: 4.5%;
+    width: 45%;
+    display: inline-block;
 }
 .posts li h2{
 	line-height: 2;
-	border-bottom: 1px solid;
 }
-
+.posts li label{
+    border-left: 3px solid yellow;
+    padding-left: 10px;
+}
+.posts .long{
+	width: 100%;
+}
 
 
 
