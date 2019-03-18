@@ -11,20 +11,70 @@
 <body>
 	<div class="desktop">
 		<div class="wrap">
+
 			<img src="img/rant.jpg">
 			<div class="nav">
 				<div class="logo">
 					<a href="works-page.html">M</a>
 				</div>
 				<span><a href="mailto:michieugwu@gmail.com">Let's connect</a></span>
+				<div class="keys">
+				<div data-key="65" class="key">
+					<kbd>A</kbd>
+					<span class="sound">clap</span>
+				</div>
+				<div data-key="83" class="key">
+					<kbd>S</kbd>
+					<span class="sound">hihat</span>
+				</div>
+				<div data-key="68" class="key">
+					<kbd>D</kbd>
+					<span class="sound">kick</span>
+				</div>
+				<div data-key="70" class="key">
+					<kbd>F</kbd>
+					<span class="sound">openhat</span>
+				</div>
+				<div data-key="71" class="key">
+					<kbd>G</kbd>
+					<span class="sound">boom</span>
+				</div>
+				<div data-key="72" class="key">
+					<kbd>H</kbd>
+					<span class="sound">ride</span>
+				</div>
+				<div data-key="74" class="key">
+					<kbd>J</kbd>
+					<span class="sound">snare</span>
+				</div>
+				<div data-key="75" class="key">
+					<kbd>K</kbd>
+					<span class="sound">tom</span>
+				</div>
+				<div data-key="76" class="key">
+					<kbd>L</kbd>
+					<span class="sound">tink</span>
+				</div>
 			</div>
+			</div>
+			
 			<div class="mask">
 				<div class="rants">
 					<h2>RANTS and BANTS!!!!</h2>
 					<h3>Actually, I'm just gonna upload opinions, tips, experiences<br> and occasional poems and stories<br><br> ...not actual ranting lol, this is clickbait</h3>
+					<span>On this page, feel free to create music with the notes provided. For each letter (a, s, d, f, g, h, j, k, l), a sound is attached. Getting to tapping on your keyboards to set the mood for each rant while you read!</span>
 				</div>
 			</div>
 		</div>
+			<audio data-key="65" src="sounds/clap.wav"></audio>
+			<audio data-key="83" src="sounds/hihat.wav"></audio>
+			<audio data-key="68" src="sounds/kick.wav"></audio>
+			<audio data-key="70" src="sounds/openhat.wav"></audio>
+			<audio data-key="71" src="sounds/boom.wav"></audio>
+			<audio data-key="72" src="sounds/ride.wav"></audio>
+			<audio data-key="74" src="sounds/snare.wav"></audio>
+			<audio data-key="75" src="sounds/tom.wav"></audio>
+			<audio data-key="76" src="sounds/tink.wav"></audio>
 		<div class="posts">
 			<ul>
 				<li>
@@ -184,4 +234,23 @@
 		</div>
 	</div>
 </body>
+<script>
+	function playSound(e){
+		const audio = document.querySelector(`audio[data-key= "${e.keyCode}"]`);
+		const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
+		if(!audio) return; //stop the funtion
+		audio.currentTime = 0; //rewind to start
+		audio.play();
+		console.log(key);
+		key.classList.add('playing');
+	};
+	function removeTransition(e){
+		if (e.propertyName == !'transform') return;
+		this.classList.remove('playing');
+	}
+
+	const keys = document.querySelectorAll('.key');
+	keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+	window.addEventListener('keydown', playSound) 
+</script>
 </html>

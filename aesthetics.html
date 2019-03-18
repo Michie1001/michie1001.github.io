@@ -101,37 +101,18 @@
 			align-self: center;
 			border-radius: 10px;
 		}
-		.img-grid{
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-template-rows: repeat(6, 300px);
-			grid-template-areas:
-			"a a a b"
-			"a a a b"
-			"a a a c"
-			"d f f g"
-			"e f f h"
-			"i i j h";
-			grid-gap: 20px;
-			align-items: start;
+		.img-list{
+			display: flex;
+			flex-wrap:wrap;
 		}
 		.img-holder{
 			border-radius: 5px;
 			background-color: #ccc;
 			overflow: hidden;
 			border:1px solid black;
-		}
-		.six-tabs{
-			grid-area: a;
-		}
-		.four-tabs{
-			grid-area: d;
-		}
-		.two-tabs{
-			grid-area: b;
-		}
-		.one-tabs{
-			grid-area: c;
+			width: 400px;
+			height: 400px;
+			margin: 1%; 
 		}
 		@media only screen and (max-width: 768px) {
 			.jumbo{
@@ -162,14 +143,14 @@
 			</ul>
 		</div>
 	</div>
-	<div class="img-grid">
-		<div class="img-holder six-tabs"></div>
-		<div class="img-holder two-tabs"></div>
-		<div class="img-holder one-tabs"></div>
-		<div class="img-holder one-tabs"></div>
-		<div class="img-holder four-tabs"></div>
-		<div class="img-holder two-tabs"></div>
-		<div class="img-holder one-tabs"></div>
+	<div class="img-list">
+		<div class="img-holder" style="background-color: #fc23cc"></div>
+		<div class="img-holder" style="background-color: #05cdcd"></div>
+		<div class="img-holder" style="background-color: #22cc54"></div>
+		<div class="img-holder" style="background-color: #3333ba"></div>
+		<div class="img-holder" style="background-color: #ac2cae"></div>
+		<div class="img-holder" style="background-color: #880fca"></div>
+		<div class="img-holder" style="background-color: #7600c1"></div>
 	</div>
 	
 	<script type="text/javascript">
