@@ -480,9 +480,38 @@ a{
 
 /*********BELOW BEGINS THE ANIMATION PAGE *********/
 
+.base {
+	color: #000;
+	overflow: hidden;
+}
+.base p{
+	text-align: center;
+	font-weight: 600;
+}
+.project__clock{
+	height: 100vh;
+	width: 100vw;
+	background: #ede574; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ede574, #e1f5c4); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ede574, #e1f5c4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	position: relative;
+	display: flex;
+}
+.night-mode{
+	background: #2b5876;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+or
+	background: #0F2027;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
-
+}
+.actions{
+	flex-direction: column;
+	display: flex;
+	justify-content: space-around;
+}
 
 /*********BELOW BEGINS THE RANT PAGE *********/
 
